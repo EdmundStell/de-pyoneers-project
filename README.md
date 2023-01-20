@@ -1,18 +1,8 @@
-Here is a suggested GitHub readme for your Lambda deployment script:
-
 Introduction
 
-The directory overall, is built to deploy three specific lambda functions onto aws using the deployment script, the functionality of the three lambda fucntion are: -----
+The directory overall, is built to deploy three specific (extract, transform and load) lambda functions onto aws using the deployment script.
 
-The functions are deployed via the main script which deploys a Lambda function to AWS using boto3. It takes in the following arguments:
-
-lambda_function_path: the path to the Lambda function within the directory
-zip_file_name: the name of the zip file to be created
-function_name_template: a template for the function name. The final function name will be "{function_name_template}-{timestamp}", where timestamp is the current timestamp.
-schedule: the schedule for the Lambda function, in the format of a standard cron expression.
-Usage
-
-To use this script, you will need to have AWS credentials set up on your machine.
+To use this script, you will need to have AWS credentials set up and stored in Github secrets.
 
 First, create an instance of the Lambda_script class, passing in the necessary arguments. Then, call the deploy method on the instance to deploy the Lambda function.
 
